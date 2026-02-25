@@ -1,0 +1,13 @@
+"./controller.o"
+"./ti_msp_dl_config.o"
+"./startup_mspm0c110x_ticlang.o"
+"./Driver/SEGGER_RTT.o"
+"./Driver/SEGGER_RTT_printf.o"
+"./Driver/acc_sc7a20.o"
+"./Driver/fm13dt160.o"
+"./Driver/hdc302x.o"
+"./Driver/mspm0_i2c_polling_safe.o"
+"./NFC_ISO/fm13_t4t.o"
+-l"./device_linker.cmd"
+-ldevice.cmd.genlibs
+-llibc.a

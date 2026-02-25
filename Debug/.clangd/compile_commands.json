@@ -1,0 +1,47 @@
+[
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/controller.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Driver/acc_sc7a20.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Driver/fm13dt160.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Driver/hdc302x.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Driver/mspm0_i2c_polling_safe.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Driver/SEGGER_RTT.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Driver/SEGGER_RTT_printf.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/NFC_ISO/fm13_t4t.c"
+   },
+   {
+      "directory" : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug",
+      "command"   : "clang++ -D__MSPM0C1104__ -D__USE_SYSCONFIG__ -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host\" -I\"C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source/third_party/CMSIS/Core/Include\" -I\"C:/ti/mspm0_sdk_2_09_00_01/source\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/armv7em-ti-none-eabihf/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c++/v1\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/lib/clang/18/include\" -isystem\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/include/c\" -xc",
+      "file"      : "C:/Users/huyvu/workspace_ccstheia/io_expander_i2c_host/Debug/ti_msp_dl_config.c"
+   }
+]
