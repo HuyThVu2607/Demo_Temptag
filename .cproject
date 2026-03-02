@@ -15,7 +15,7 @@
             <storageModule moduleId="cdtBuildSystem" version="4.0.0">
                 <configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.2054305873" name="Debug" parent="com.ti.ccstudio.buildDefinitions.TMS470.Debug">
                     <folderInfo id="com.ti.ccstudio.buildDefinitions.TMS470.Debug.2054305873." name="/" resourcePath="">
-                        <toolChain id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.DebugToolchain.1132379246" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.linkerDebug.1875102289">
+                        <toolChain id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.DebugToolchain.1132379246" name="TI Build Tools" secondaryOutputs="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.outputType__BIN.348365543" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.linkerDebug.1875102289">
                             <option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1173021817" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
                                 <listOptionValue value="DEVICE_CONFIGURATION_ID=Cortex M.MSPM0C1104"/>
                                 <listOptionValue value="DEVICE_CORE_ID="/>
@@ -29,7 +29,7 @@
                             </option>
                             <option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.995815211" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="TICLANG_4.0.4.LTS" valueType="string"/>
                             <targetPlatform id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.targetPlatformDebug.1281330144" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.targetPlatformDebug"/>
-                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.builderDebug.2126752460" name="GNU Make.Debug" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.builderDebug"/>
+                            <builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.builderDebug.2126752460" keepEnvironmentInBuildfile="false" name="GNU Make" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.builderDebug"/>
                             <tool id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.compilerDebug.1904334790" name="Arm Compiler" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.exe.compilerDebug">
                                 <option id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.compilerID.MARCH.390204661" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.compilerID.MARCH" value="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.compilerID.MARCH.thumbv6m" valueType="enumerated"/>
                                 <option id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.compilerID.MCPU.582939162" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.compilerID.MCPU" value="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.compilerID.MCPU.cortex-m0plus" valueType="enumerated"/>
@@ -76,7 +76,11 @@
                                 <option id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.linkerID.DISPLAY_ERROR_NUMBER.569774966" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
                                 <option id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.linkerID.XML_LINK_INFO.782396682" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.linkerID.XML_LINK_INFO" value="${ProjName}_linkInfo.xml" valueType="string"/>
                             </tool>
-                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.2139779543" name="Arm Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex"/>
+                            <tool id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.2139779543" name="Arm Hex Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex">
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.TOOL_ENABLE.1033920913" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.TOOL_ENABLE" value="true" valueType="boolean"/>
+                                <option id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.OUTPUT_FORMAT.1498895440" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.OUTPUT_FORMAT" value="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.OUTPUT_FORMAT.INTEL" valueType="enumerated"/>
+                                <outputType id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.outputType__BIN.348365543" name="Binary File" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.hex.outputType__BIN"/>
+                            </tool>
                             <tool id="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.objcopy.1463179449" name="Arm Objcopy Utility" superClass="com.ti.ccstudio.buildDefinitions.TMS470_TICLANG_4.0.objcopy"/>
                             <tool id="com.ti.ccstudio.buildDefinitions.sysConfig.63379488" name="SysConfig" superClass="com.ti.ccstudio.buildDefinitions.sysConfig">
                                 <option id="com.ti.ccstudio.buildDefinitions.sysConfig.PRODUCTS.965802675" superClass="com.ti.ccstudio.buildDefinitions.sysConfig.PRODUCTS" valueType="stringList">

@@ -132,10 +132,16 @@ io_expander_i2c_host.out
 EXE_OUTPUTS__QUOTED += \
 "io_expander_i2c_host.out" 
 
+BIN_OUTPUTS += \
+io_expander_i2c_host.hex 
+
+BIN_OUTPUTS__QUOTED += \
+"io_expander_i2c_host.hex" 
+
 
 # All Target
 all: $(OBJS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "io_expander_i2c_host.out"
+	@$(MAKE) --no-print-directory -Onone "io_expander_i2c_host.out" secondary-outputs
 
 # Tool invocations
 io_expander_i2c_host.out: $(OBJS) $(GEN_CMDS)
@@ -145,13 +151,22 @@ io_expander_i2c_host.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
+io_expander_i2c_host.hex: $(EXE_OUTPUTS)
+	@echo 'Building secondary target: "$@"'
+	@echo 'Invoking: Arm Hex Utility'
+	"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-armllvm_4.0.4.LTS/bin/tiarmhex.exe" --diag_wrap=off --intel -o "io_expander_i2c_host.hex" $(EXE_OUTPUTS__QUOTED)
+	@echo 'Finished building secondary target: "$@"'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) $(GEN_MISC_FILES__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
+	-$(RM) $(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)
 	-$(RM) "controller.o" "ti_msp_dl_config.o" "startup_mspm0c110x_ticlang.o" "Driver\SEGGER_RTT.o" "Driver\SEGGER_RTT_printf.o" "Driver\acc_sc7a20.o" "Driver\fm13dt160.o" "Driver\hdc302x.o" "Driver\mspm0_i2c_polling_safe.o" "NFC_ISO\fm13_t4t.o" 
 	-$(RM) "controller.d" "ti_msp_dl_config.d" "startup_mspm0c110x_ticlang.d" "Driver\SEGGER_RTT.d" "Driver\SEGGER_RTT_printf.d" "Driver\acc_sc7a20.d" "Driver\fm13dt160.d" "Driver\hdc302x.d" "Driver\mspm0_i2c_polling_safe.d" "NFC_ISO\fm13_t4t.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
+
+secondary-outputs: $(BIN_OUTPUTS)
 
 .PHONY: all clean dependents
 .SECONDARY:

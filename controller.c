@@ -58,6 +58,8 @@ static uint8_t verify_buf[32];
 
 bool gAccIntFlag  = false;
 bool gTempIntFlag = false;
+
+int16_t ax = 0, ay = 0, az = 0;
 /* ========================= */
 /* MAIN                      */
 /* ========================= */
@@ -124,7 +126,7 @@ void NDEF_Flush_All(void)
 
         FM13DT160_PowerOn();
         FM13DT160_WriteEEPROM(addr, &ndef_buf[i], w);
-        delay_cycles(100000);
+        delay_cycles(1000000);
         FM13DT160_PowerOff();
         delay_cycles(100000);
 
@@ -206,16 +208,16 @@ void fm13_write_hello(void)
 
     };
 
-    uint16_t addr = 0x0010;
+    uint16_t addr = 0x0000;
     uint16_t i = 0;
-    uint16_t len = sizeof(ndef_2_records);
+    uint16_t len = sizeof(ndef);
 
     while (i < len)
     {
         uint8_t w = (len - i >= 3) ? 3 : (len - i);
 
         FM13DT160_PowerOn();
-        FM13DT160_WriteEEPROM(addr, &ndef_2_records[i], w);
+        FM13DT160_WriteEEPROM(addr, &ndef[i], w);
         FM13DT160_PowerOff();
         delay_cycles(240000);
 
@@ -298,8 +300,8 @@ int main(void)
     uint8_t  acc_id = SC7A20H_ReadWhoAmI();             // ID = 0x11
 
     // fm13_write_hello();
-    // NDEF_Template_Init();
-    // NDEF_Flush_All();
+    NDEF_Template_Init();
+    NDEF_Flush_All();
 
     FM13DT160_PowerOn();
     FM13DT160_ReadEEPROM(0x0000, verify_buf, 32);
@@ -308,7 +310,7 @@ int main(void)
 
     SC7A20H_EnableMotionInt();
     NVIC_EnableIRQ(GROUP0_INT_IRQN);
-    src = SC7A20H_ReadIntSource();
+    uint8_t src = SC7A20H_ReadIntSource();
 
     while (1)
     {
@@ -317,12 +319,12 @@ int main(void)
         if (temp != 0 && temp != -45)
         {
             //NDEF_WriteSingleRecord(temp, rh);
-            // NDEF_Update_Record(current_record, temp, rh);
-            // NDEF_Flush_All();
+            NDEF_Update_Record(current_record, temp, rh);
+            NDEF_Flush_All();
 
-            // current_record++;
-            // if (current_record >= NREC)
-            //     current_record = 0;
+            current_record++;
+            if (current_record >= NREC)
+                current_record = 0;
         }
 
         if (gAccIntFlag) {
@@ -331,7 +333,7 @@ int main(void)
             SC7A20H_ReadXYZ(&ax, &ay, &az);
         }
 
-        delay_cycles(50000000);
+        delay_cycles(100000000);
     }
 }
 
